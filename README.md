@@ -21,7 +21,7 @@ pkg install git -y
 git clone https://github.com/DARK-D699/DARK-
 ```
 ```
-cd DARK/
+cd DARK-/
 ```
 ```
 chmod +x *
@@ -39,7 +39,7 @@ exit
 ### AT ONCE :
 
 ```
-apt update && apt upgrade -y ; pkg install git -y ; git clone https://github.com/DARK-D699/DARK- ; cd DARK/ ; chmod +x * ; bash install.sh
+apt update && apt upgrade -y ; pkg install git -y ; git clone https://github.com/DARK-D699/DARK- ; cd DARK-/ ; chmod +x * ; bash install.sh
 ```
 
 <details id="missing-code-coverage">
