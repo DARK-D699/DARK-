@@ -1,6 +1,6 @@
 #bin/bash/'!¡
 clear
-# dx color
+# dark color
 r='\033[1;91m'
 p='\033[1;95m'
 y='\033[1;93m'
@@ -18,7 +18,7 @@ C='\033[1;92m[\033[1;00m</>\033[1;92m]\033[92m'
 lm='\033[96m▱▱▱▱▱▱▱▱▱▱▱▱\033[0m〄\033[96m▱▱▱▱▱▱▱▱▱▱▱▱\033[1;00m'
 dm='\033[93m▱▱▱▱▱▱▱▱▱▱▱▱\033[0m〄\033[93m▱▱▱▱▱▱▱▱▱▱▱▱\033[1;00m'
 
-# dx icon
+# dark icon
     OS="\uf6a6"
     HOST="\uf6c3"
     KER="\uf83c"
@@ -112,17 +112,17 @@ simu="$ds/colors.properties"
 if [ -f "$dx" ]; then
     echo
 else
-	cp $HOME/DARK/files/font.ttf "$ds"
+	cp $HOME/CODEX/files/font.ttf "$ds"
 fi
 
 if [ -f "$simu" ]; then
     echo
 else 
         
-	cp $HOME/DARK/files/colors.properties "$ds"
+	cp $HOME/CODEX/files/colors.properties "$ds"
 fi
-cp $HOME/DARK/files/ASCII-Shadow.flf $PREFIX/share/figlet/
-mv $HOME/DARK/files/remove /data/data/com.termux/files/usr/bin/
+cp $HOME/CODEX/files/ASCII-Shadow.flf $PREFIX/share/figlet/
+mv $HOME/CODEX/files/remove /data/data/com.termux/files/usr/bin/
 chmod +x /data/data/com.termux/files/usr/bin/remove
 termux-reload-settings
 }
@@ -130,7 +130,7 @@ dxnetcheck() {
 clear
 echo
 echo -e "               ${g}╔═══════════════╗"
-echo -e "               ${g}║ ${n}</>  ${c}DARK-D${g}   ║"
+echo -e "               ${g}║ ${n}</>  ${c}DARK-X${g}   ║"
 echo -e "               ${g}╚═══════════════╝"
 echo -e "  ${g}╔════════════════════════════════════════════╗"
 echo -e "  ${g}║  ${C} ${y}Checking Your Internet Connection¡${g}  ║"
@@ -165,12 +165,12 @@ read -p "[+]──[Enter Your Name]────► " name
 echo
     
     # Specify the input and output file names
-    INPUT_FILE="$HOME/DARK/files/.zshrc"
+    INPUT_FILE="$HOME/CODEX/files/.zshrc"
     # Temporary file for output
 
     # Use sed to replace SIMU with the name and save to a temporary file
-    sed "s/PUCHU/$name/g" "$INPUT_FILE" > "$HOME/.zshrc"
-    sed "s/PUCHU/$name/g" "$HOME/DARK/files/.dark.zsh-theme" > "$HOME/.oh-my-zsh/themes/dark.zsh-theme"
+    sed "s/SIMU/$name/g" "$INPUT_FILE" > "$HOME/.zshrc"
+    sed "s/SIMU/$name/g" "$HOME/CODEX/files/.codex.zsh-theme" > "$HOME/.oh-my-zsh/themes/codex.zsh-theme"
 
     # Check if sed was successful
     if [[ $? -eq 0 ]]; then
@@ -180,7 +180,7 @@ echo
     echo
     echo -e "		        ${g}Hey ${y}$name"
     echo -e "${c}              (\_/)"
-    echo -e "              (${y}^ω^${c})     ${g}I'm DarkD-Puchu${c}"
+    echo -e "              (${y}^ω^${c})     ${g}I'm Dark-D${c}"
     echo -e "             ⊂(___)づ  ⋅˚₊‧ ଳ ‧₊˚ ⋅"
     echo
     echo -e " ${A} ${c}Your Banner created ${g}Successfully¡${c}"
@@ -194,7 +194,7 @@ echo
     fi
     
 D1="$HOME/.termux"
-VERSION="$D1/dark.txt"
+VERSION="$D1/dx.txt"
     echo "version 1 1.4" > "$VERSION"
 echo
 clear
@@ -203,12 +203,12 @@ clear
 banner() {
 echo
 echo
-echo "    ${y}░██████╗  █████╗ ██████╗ ██╗  ██╗    ██╗   ██╗███████╗███████╗██████╗"
-echo "    ${y}██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝    ██║   ██║██╔════╝██╔════╝██╔══██╗"
-echo "    ${y}██║  ██║███████║██████╔╝█████╔╝     ██║   ██║███████╗█████╗  ██████╔╝"
-echo "    ${c}██║  ██║██╔══██║██╔══██╗██╔═██╗     ██║   ██║╚════██║██╔══╝  ██╔══██╗"
-echo "    ${c}██████╔╝██║  ██║██║  ██║██║  ██╗    ╚██████╔╝███████║███████╗██║  ██║"
-echo "    ${c}░╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝     ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═╝${n}"
+echo -e "   ${y}▓█████▄  ▄▄▄       ██▀███   ██ ▄█▀"
+echo -e "   ${y}▒██▀ ██▌▒████▄    ▓██ ▒ ██▒ ██▄█▒ "
+echo -e "   ${y}░██   █▌▒██  ▀█▄  ▓██ ░▄█ ▒▓███▄░ "
+echo -e "   ${c}█░▓█▄   ▌░██▄▄▄▄██ ▒██▀▀█▄  ▓██ █▄ "
+echo -e "   ${c}░▒████▓  ▓█   ▓██▒░██▓ ▒██▒▒██▒ █▄"
+echo -e "   ${c}░╚════╝░░╚════╝░╚═════╝░╚══════╝╚═╝░░╚═╝${n}"
 echo -e "${y}               +-+-+-+-+-+-+-+-+-+"
 echo -e "${c}               |B|Y|-|D|A|R|K|-|D|"
 echo -e "${y}               +-+-+-+-+-+-+-+-+-+${n}"
@@ -232,7 +232,7 @@ if [ -d "/data/data/com.termux/files/usr/" ]; then
     echo -e " ${lm}"
     termux
     # dx check if D1DOS folder exists
-    if [ -d "$HOME/DARK" ]; then
+    if [ -d "$HOME/CODEX" ]; then
         sleep 2
 	clear
 	banner
@@ -251,7 +251,7 @@ if [ -d "/data/data/com.termux/files/usr/" ]; then
 	echo
 	sleep 3
 	cd "$HOME"
-	rm -rf DARK
+	rm -rf CODEX
 	exit 0
 	    else
         clear
